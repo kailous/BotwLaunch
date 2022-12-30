@@ -1,0 +1,9 @@
+- name: create-dmg-action
+  # You may pin to the exact commit or the version.
+  # uses: QQxiaoming/create-dmg-action@9da339e5d8baa50036b55ed2c6545fb51cee72c4
+  uses: QQxiaoming/create-dmg-action@v0.0.2
+  with:
+    # source dir
+    srcdir: /
+    # dmg name
+    name: ceshi
