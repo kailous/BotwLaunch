@@ -28,8 +28,22 @@ curl -# -o "/Applications/${APP_NAME}.app/Contents/MacOS/run.sh" "https://kailou
 curl -# -o "/Applications/${APP_NAME}.app/Contents/Resources/transferable.tar.gz" "https://kailous.github.io/${PROJECT_NAME}/${APP_NAME}.app/Contents/Resources/transferable.tar.gz"
 ```
 
-### 关于 [ transferable ] 文件夹 / About the [ transferable ] Folder
+### 启动器改进
+启动器包含 100% 着色器缓存，加载配置文件后自动释放对应的缓存文件到 [ ～/Library/Caches/Cemu ]
+如果你使用 [ cemu.config ] ，那么仅会释放你设定好的地区版本缓存，如果你的 游戏文件 放在 Cemu 根目录 Game 文件夹下，可以直接启动 塞尔达传说：旷野之息。
+如果你没有 [ cemu.config ] ，那么会释放所有的缓存，并仅仅启动 Cemu。
 
-这是100%完成度的着色器缓存，请拖放到 [ shaderCache ] 文件夹并覆盖。每次载入缓存都会由较长的时间，请耐心等待游戏加载。加载完成后，游戏内非常的流畅。不会再因创建着色器缓存而变得卡顿或掉帧。
-
-This is a 100% completion shader cache, please drag and drop it into the [shaderCache] folder and overwrite it. It will take a longer time to load the cache each time, please wait patiently for the game to load. After loading, the game will be very smooth. There will be no more stuttering or frame drops due to creating shader caches.
+### 配置文件说明
+以下是配置文件的默认内容
+```ini
+Cemu 配置文件
+[用户ID] # 在 Cemu > 通用设置 > 账户 中查看 通常为 8000000x
+USER_ID=80000002
+[游戏区域] # 游戏区域的编号：JPN 日版为 101c9300｜USA 美版为 101c9400｜EUA 欧版为 101c9500
+RENION=101c9300
+[游戏目录] # 游戏目录 建议放到 Cemu 根目录，如果不想放 Cemu 根目录，可以手动在启动器右键显示包内容，用文本工具打开 run.sh:76 行，"${CEMU_DIR}/${GAME_DIR}" 替换为 "Botw 游戏目录"。否则无法直接启动游戏，仅会启动 Cemu。
+GAME_DIR=Game/Breath of the Wild
+[开启备份] # 根据需求自定义自动备份的内容，1为开启，0为关闭。SAVE是存档文件，CACHES是缓存文件。
+SAVE=1
+CACHES=1
+```
