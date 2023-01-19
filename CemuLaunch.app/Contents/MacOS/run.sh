@@ -16,7 +16,6 @@ if [ -f "${CEMU_DIR}/cemu.config" ]; then
   for line in "${CEMU_DIR}/cemu.config"; do
     USER_ID=$(cat "${line}" | grep "USER_ID=" | sed "s/^.*=//")
     RENION=$(cat "${line}" | grep "RENION=" | sed "s/^.*=//")
-    TARGET=$(cat "${line}" | grep "TARGET=" | sed "s/^.*=//")
     SAVE=$(cat "${line}" | grep "SAVE=" | sed "s/^.*=//")
     CACHES=$(cat "${line}" | grep "CACHES=" | sed "s/^.*=//")
   done
