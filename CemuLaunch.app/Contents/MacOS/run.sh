@@ -68,6 +68,8 @@ if [ -f "${CEMU_CONFIG}" ]; then
   else
         echo "跳过存档文件备份"
   fi
+# 直接启动 Botw
+/Applications/Cemu.app/Contents/MacOS/Cemu -g "${CEMU_DIR}/${GAME_DIR}"
 else
   # 清除 所有的 Botw 的用户着色器缓存以忽略错误
   echo "配置文件不存在，启动默认设置，重置所有 botw 缓存。"
@@ -95,4 +97,4 @@ else
 fi
 
 # 开启 Cemu
-/Applications/Cemu.app/Contents/MacOS/Cemu -g "${CEMU_DIR}/${GAME_DIR}"
+open /Applications/Cemu.app
