@@ -1,7 +1,10 @@
 # BotwLaunch / 塞尔达传说：旷野之息 for Cemu 启动器
 
-[简体中文](./README.md) | [English](./README-EN.md)
+[Goto Github](https://github.com/kailous/BotwLaunch)
 
+----
+
+[简体中文](./README.md) | [English](./README-EN.md)
 
 Cemu 因为着色器缓存的 Bug 会导致 [ 塞尔达传说：旷野之息 ] 第二次启动出现闪退。需要手动删除 /shaderCache/driver/vk/00050000101c9xxx.bin
 文件才能再次启动游戏，直接使用启动器会自动删除文件并开启 Cemu。

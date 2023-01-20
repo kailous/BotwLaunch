@@ -1,5 +1,7 @@
 # BotwLaunch / The Legend of Zelda: Breath of the Wild for Cemu Launcher
+[Goto Github](https://github.com/kailous/BotwLaunch)
 
+----
 [简体中文](./README.md) | [English](./README-EN.md)
 
 Cemu has a bug with shader cache that can cause [The Legend of Zelda: Breath of the Wild] to crash when it is launched for the second time. You need to manually delete the file /shaderCache/driver/vk/00050000101c9xxx.bin in order to launch the game again. The launcher will automatically delete the file and launch Cemu.
