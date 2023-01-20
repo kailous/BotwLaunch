@@ -2,7 +2,7 @@
 # 设定基础变量
 APP_NAME=CemuLaunch
 PROJECT_NAME=CemuLaunch
-ICON_NAME=ShortcutIcon
+ICON_NAME=shortcut
 # 下载默认配置文件到 Cemu 根目录 ｜ 请手动修改 USER_ID 用户ID & RENION 游戏区域
 echo "安装配置文件"
 curl -# -o "${HOME}/Library/Application Support/Cemu/cemu.config" "https://raw.githubusercontent.com/kailous/${PROJECT_NAME}/main/cemu.config"
