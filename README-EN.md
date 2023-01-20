@@ -1,4 +1,5 @@
 # BotwLaunch / The Legend of Zelda: Breath of the Wild for Cemu Launcher
+
 [Goto Github](https://github.com/kailous/BotwLaunch)
 
 ----
