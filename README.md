@@ -1,6 +1,6 @@
 # BotwLaunch / 塞尔达传说：旷野之息 for Cemu 启动器
 
-[Goto Github](https://github.com/kailous/BotwLaunch)
+[Goto Github](https://github.com/kailous/BotwLaunch) | [Goto Discord](https://discord.gg/dvBJnakPuq)
 
 ----
 
